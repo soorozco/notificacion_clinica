@@ -101,7 +101,23 @@ with col4:
 
 col6, col8 = st.columns(2)
 with col6:
-    servicio = st.text_input("Servicio")
+    servicios = [
+        "Urgencias",
+        "Terapia Intensiva",
+        "Endoscopia",
+        "Rayos X e Imagenología",
+        "Hemodiálisis",
+        "Quirófano",
+        "Cunero",
+        "Hospitalización PA",
+        "Hospitalización PB",
+        "Hospitalización Gine",
+        "Banco de Sangre",
+        "Laboratorio",
+        "Hemodinamia",
+        "Rehabilitación"
+    ]
+    servicio = st.selectbox("Servicio", servicios, index=0)  # "Urgencias" como default
 with col8:
     cama = st.text_input("Cama")
 
