@@ -102,6 +102,7 @@ with col4:
 col6, col8 = st.columns(2)
 with col6:
     servicios = [
+        "",
         "Urgencias",
         "Terapia Intensiva",
         "Endoscopia",
